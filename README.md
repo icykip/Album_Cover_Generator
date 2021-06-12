@@ -11,6 +11,8 @@ LOGAN archirecture.
 
 The objective of this project is to utilize state of the art GAN architectures on a newer more expansive image dataset in hopes of achieving state of the art performance in generating modern album cover art. In order to accomplish this, this project consists of two builds and a custom dataset. 
 
+My exploration so far has led me to believe that a non-conditional GAN is more likely to produce more desirable album cover art than a conditional one(at least using the conditional structure I employ) while a lot more experimentation should be done in exploring what data works best as a conditon, so far the added complexity seems to only stagnate the model. If your looking for some fun things to try I included a future work section of things I intened to try and never really got to.
+
 #### Dataset
 
 The dataset was built using the Spotify API and the compatibly python library [spotipy](https://spotipy.readthedocs.io/en/2.18.0/) I gathered over 1,000,000 datapoints each consisting of an album name, track name, track image, and set of numerical indicators provided by sspotify known as audio features. The objective was to use these numerical indicators as labels or conditions to implement in the model architecture. Before using the dataset it should be noted that it is not completely clean some datapoints have images with only 3 channels or an odd dimensionality(width/height) so additionally cleaning may be necessary.
