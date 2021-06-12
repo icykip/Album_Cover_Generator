@@ -67,6 +67,7 @@ Although I am retiring this project for now here are thing I plan/would do in th
 - Train a model that instead uses a word or character level embedding of the track name as the condition
 - Include quantitative metrics
 - Implement a model that makes use of Qiskits Quantim Machine Learning library
+- Train using only images with no text and vice versa
 
 
 
